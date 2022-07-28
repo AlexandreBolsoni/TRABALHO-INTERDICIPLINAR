@@ -1,127 +1,145 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Libre+Bodoni:wght@700&family=Montserrat:ital@1&family=Passion+One:wght@700&display=swap');
 /* cabeçalho */
 
-.caixa{
-  position: fixed;
-    z-index: 100%;
-    background-color: rgb(0,44, 55);
-    height: 150px;
-    width: 100%;
+.caixa {
+  background-color: rgb(0, 44, 55);
+  height: 100px;
+  width: 100%;
 }
 
-.logoBranca{
-    margin-left: 32%;
-    margin-bottom: 50%;
-    width: 15%;
- }
- html{
-  font-family: 'Fredoka';
-  white-space:nowrap;
-  }
-nav {
-
-width: 100%;
-
+.logoBranca {
+  margin-left: 32%;
+  margin-bottom: 50%;
+  width: 300px;
 }
+
+ul {
+  margin: 15px;
+  position: absolute;
+  top: 65px;
+  left: 830px;
+}
+
 li {
+  margin-bottom: 25%;
   font-size: 15px;
   display: inline;
   margin: 0 0 0 15px;
 }
 
 a {
-
-text-transform: uppercase;
-color: #ffffff;
-font-weight: bold;
-font: size 17px;
-text-decoration: none;
+  width: 50%;
+  margin-bottom: 25%;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+li:hover{
+  transform: scale(1.07);
+  color: #ffffff;
+  transition: 1s all;
+  cursor: pointer;
 }
 
 /* corpo do site */
+html {
+  font-family: 'Fredoka';
+  white-space: nowrap;
+}
+
 body {
   font-family: 'Fredoka';
-  height: 100%;
-  display:inline-block;
+  display: inline-block;
   overflow-x: hidden;
-    background-color: rgb(240, 246, 255);
-    margin: 0 auto;
-    height: 50vh;
-      display:inline-block; 
-  }
-  /* parte de busaca */
-  .busca{
-    margin-right: 20%;
-    margin-top: 16%;
-   
-  }
-  /* parte de tabela */
-  .toda-tabela{
-    font-family: 'Fredoka';
-    margin: 0 0 0 15px;
-    margin-left: 15%;
-    margin-bottom: 7%;
-  }
+  background-color: rgb(240, 246, 255);
+  margin: 0 auto;
+  display: inline-block;
+}
 
- 
-  main {
-    margin-left: 20%;
-    width: 70%;
-    text-align: center;
-    font-family: 'Fredoka';
-    max-width: max-content;
-    padding: 1.5em;
-    background-color:rgb(240, 246, 255);
+/* parte de busaca */
+.busca {
   
-  }
-  nav {
-    position: absolute;
-    top: 100px;
-    left: 950px;
-  }
-
-
-.tabela{
-width: 100%;
-  margin: 0 0 0 15px;
+  padding: 30px;
+  margin-top: 6%;
 }
-thead{
-  width: 100%;
-  margin-bottom: 2%;
+#inBuscar{
+  margin-bottom: 20px;
 }
-tr{
+#inData:hover{
+  transform: scale(1.05);
+  
+  transition: 1s all;
+  cursor: pointer;
+}
+#inBuscar:hover{
+  transform: scale(1.05);
+  
+  transition: 1s all;
+  cursor: pointer;
+}
 
- width: 100%;
-  margin: 0 0 0 15px;
+/* parte de tabela */
+
+#tab {
+  width: 60%;
+  padding: 10px;
 }
-td{
- width: 100%;
-  margin: 0 0 0 15px;
+
+main {
+  margin: 0 auto;
+  font-size: clamp(0.2em, 0.2em + 0, 2vw, 1em);
+  text-align: center;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  font-family: 'Fredoka';
+  max-width: max-content;
+  background-color: rgb(240, 246, 255);
+
+}
+
+thead {
+  width: 50%;
+
+}
+
+tr {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+td {
+  width: 50%;
+  margin: 0 auto;
   border: 2px solid #393939bb;
   border-radius: 8px;
 }
 
-  /* rodapé */
-  footer{
+/* rodapé */
+footer {
+  position: static;
+  bottom: 0;
+  margin-top: 30px;
+  background-color: black;
+  width: 100%;
+  text-align: center;
 
-      background-color:black; 
-      width: 100%;
-    text-align: center;
-  
- }
+}
 
- .copyright {
-       
-    width: 100%;
-    margin: 0 auto;
-    color: rgb(255, 255, 255);
-    font-size: 10px;
-    margin: 0, 0;
+.copyright {
+
+  width: 100%;
+  margin: 0 auto;
+  color: rgb(255, 255, 255);
+  font-size: 10px;
+  margin: 0, 0;
 }
 
 .img-copy {
-    width: 20%;
-    margin: 0, 0;
-  
+  width: 20%;
+  margin: 0, 0;
+
 
 }

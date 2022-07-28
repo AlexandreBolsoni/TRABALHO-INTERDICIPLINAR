@@ -7,51 +7,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style\reset.css">
     <link rel="stylesheet" href="style\resultado.css">
-    
 
-    <title>|Resultados|</title>
+
+    <title>Resultados</title>
 </head>
 
 <body onload="javascript:vetor()">
     <header>
         <div class="caixa">
-           <img  class="logoBranca" src="logo/logo branca.png" alt="">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="resultado.html">Resultado</a></li>
-                    <li><a href="contatos.html">Contato</a></li>
-                    
-                </ul>
-            </nav>
+            <img class="logoBranca" src="logo/logo branca.png" alt="">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resultado.html">Resultado</a></li>
+                <li><a href="contatos.html">Contato</a></li>
+                <li><a href="iformacao.html">informações</a></li>
+            </ul>
         </div>
 
     </header>
 
 
     <main>
-        <div class="busca">
-        <input type="text" id="inBuscar" placeholder="Buscar por nome" onkeyup="pesquisar()" >    
-        <input type="text"  id="inData" onkeyup="mostra()" placeholder="Insira um ano">
+        <section class="busca">
+            <p>Nome e sobrenome: <input type="text" id="inBuscar" placeholder="Buscar por nome"></p>
+           <p>Ano de nascimento: <input type="text" id="inData"  placeholder="Insira um ano"></p>
+   
+          
+        </section>
         <table id="tab">
-        </div>
-        <div class="toda-tabela">
-            <thead>
-                <tr>
-                    <th>Nome</th>
-                    <th>CPF</th>
-                    <th>data de nascimento</th>
-                    <th>PONTUAÇÃO</th>
-                    <th>Resultado</th>
-                </tr>
-            </thead>
-            <tbody id="tabela">
-            </tbody>
+        <thead>
+            
+            <tr class="titulo-tabela">
+                <th>NOME</th>
+                <th>CPF</th>
+                <th>NASCIMENTO</th>
+                <th>PONTOS</th>
+                <th>RESULTADO</th>
+            </tr>
+        </thead>
+        <tbody id="tabela">
+        </tbody>
         </table>
-    </div>
         </div>
     </main>
-    
+
     <script src="javascript\vetores.js"></script>
     <script src="javascript\resultado.js"></script>
     <footer>

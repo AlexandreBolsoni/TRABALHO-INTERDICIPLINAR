@@ -1,21 +1,30 @@
+/*Trabalho Interdisiplinar
+Tema:Concurso Publicos
+Grupo: Estêvão, Alexandre, Laélio
+*/
 var inBuscar = document.getElementById("inBuscar");
 var inData = document.getElementById("inData");
+
+
+
+
+
 function vetor() {
 
     for (var aux = 0; aux < nome.length; aux++) {
 
-        var mae = document.getElementById("tabela");
+        var tab = document.getElementById("tabela");
         var organiza = document.createElement('tr');
 
-       
+
         var vetNome = document.createElement('td');
         var vetCPF = document.createElement('td');
         var vetNascimento = document.createElement('td');
         var vetPonto = document.createElement('td');
         var resultado = document.createElement("td");
-        
 
-      
+
+
         vetNome.textContent = nome[aux];
         vetCPF.textContent = cpf[aux];
         vetNascimento.textContent = nascimento[aux];
@@ -25,20 +34,20 @@ function vetor() {
         } else {
             resultado.textContent = "REPROVADO"
         }
-        
 
-        
+
+
         organiza.appendChild(vetNome);
         organiza.appendChild(vetCPF);
         organiza.appendChild(vetNascimento);
         organiza.appendChild(vetPonto);
         organiza.appendChild(resultado);
-        
 
 
-        mae.appendChild(organiza);
 
-        
+        tab.appendChild(organiza);
+
+
 
     }
 }
@@ -46,8 +55,8 @@ function vetor() {
 
 function pesquisar() {
     var busca = inBuscar.value
-    var mae = document.getElementById("tabela");
-    mae.innerText = ""
+    var tab = document.getElementById("tabela");
+    tab.innerText = ""
     for (var i = 0; i < nome.length; i++) {
         if (nome[i].toUpperCase().indexOf(busca.toUpperCase()) != -1) {
             var organiza = document.createElement('tr');
@@ -78,60 +87,63 @@ function pesquisar() {
             organiza.appendChild(resultado);
 
 
-            mae.appendChild(organiza);
+            tab.appendChild(organiza);
 
         }
+        else {
 
+        }
     }
+
 }
-inBuscar.addEventListener("keyup",pesquisar);
+inBuscar.addEventListener("keyup", pesquisar);
 
 
 function mostra() {
-   
+    var buscaNome = inBuscar.value
     var busca = inData.value
-    var mae = document.getElementById("tabela");
-    mae.innerText = ""
+    var tab = document.getElementById("tabela");
+    tab.innerText = ""
     for (var i = 0; i < anoNascimento.length; i++) {
 
-      
-            if (anoNascimento[i]<=busca) {
-               
-                var organiza = document.createElement('tr');
 
-                var vetNome = document.createElement('td');
-                var vetCPF = document.createElement('td');
-                var vetNascimento = document.createElement('td');
-                var vetPonto = document.createElement('td');
-                var resultado = document.createElement("td");
-                
+        if (anoNascimento[i] <= busca && nome[i].toUpperCase().indexOf(buscaNome.toUpperCase()) != -1) {
 
-                
-                vetNome.textContent = nome[i];
-                vetCPF.textContent = cpf[i];
-                vetNascimento.textContent = nascimento[i];
-                vetPonto.textContent = ponto[i];
-                if (ponto[i] >= 900) {
-                    resultado.textContent = "APROVADO"
-                } else {
-                    resultado.textContent = "REPROVADO"
-                }
-                
+            var organiza = document.createElement('tr');
+
+            var vetNome = document.createElement('td');
+            var vetCPF = document.createElement('td');
+            var vetNascimento = document.createElement('td');
+            var vetPonto = document.createElement('td');
+            var resultado = document.createElement("td");
 
 
 
-                organiza.appendChild(vetNome);
-                organiza.appendChild(vetCPF);
-                organiza.appendChild(vetNascimento);
-                organiza.appendChild(vetPonto);
-                organiza.appendChild(resultado);
-                
-
-
-                mae.appendChild(organiza);
+            vetNome.textContent = nome[i];
+            vetCPF.textContent = cpf[i];
+            vetNascimento.textContent = nascimento[i];
+            vetPonto.textContent = ponto[i];
+            if (ponto[i] >= 900) {
+                resultado.textContent = "APROVADO"
+            } else {
+                resultado.textContent = "REPROVADO"
             }
-            if(busca == ""){
-                var organiza = document.createElement('tr');
+
+
+
+
+            organiza.appendChild(vetNome);
+            organiza.appendChild(vetCPF);
+            organiza.appendChild(vetNascimento);
+            organiza.appendChild(vetPonto);
+            organiza.appendChild(resultado);
+
+
+
+            tab.appendChild(organiza);
+        }
+        if (busca == "") {
+            var organiza = document.createElement('tr');
 
             var vetNome = document.createElement('td');
             var vetCPF = document.createElement('td');
@@ -159,11 +171,9 @@ function mostra() {
             organiza.appendChild(resultado);
 
 
-            mae.appendChild(organiza);
+            tab.appendChild(organiza);
 
-            }
-        
         }
-
+            }
 }
-inData.addEventListener("keyup",mostra);
+inData.addEventListener("keyup", mostra);

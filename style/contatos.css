@@ -1,150 +1,161 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Libre+Bodoni:wght@700&family=Montserrat:ital@1&family=Passion+One:wght@700&display=swap');
 
-
 /* cabeçalho */
-html{
+html {
     font-family: 'Fredoka';
 }
 
-.caixa{
+.caixa {
     font-family: 'Fredoka';
-    position: fixed;
-  top: 0%;
-    z-index: 100%;
     background-color: rgb(0, 44, 55);
-    height: 150px;
+    height: 100px;
     width: 100%;
 }
 
-.logoBranca{
+ul {
+    margin: 15px;
+    position: absolute;
+    top: 80px;
+    left: 840px;
+}
+
+.logoBranca {
     margin-left: 32%;
     margin-bottom: 50%;
-    width: 15%;
+    width: 300px;
 
-  
 }
+
 /* corpo da pagina */
 
 body {
     background-color: rgb(240, 246, 255);
-    margin: 0 auto;
     font-family: 'Fredoka';
-      display:inline-block;
-         
-  }
-    nav {
-        font-family: 'Fredoka';   
-    position: absolute;
-    top: 100px;
-    left: 950px;
+    display: inline-block;
+
 }
- li {
+
+li {
+    margin: 15px;
     font-family: 'Fredoka';
     display: inline;
-    
+
 }
+
 a {
+    font-weight: bold;
+    margin: 15px;
     font-family: 'Fredoka';
     text-transform: uppercase;
     color: #ffffff;
-    font-weight: bold;
-    font-size: 32px;
+    font-size: clamp(0.5em, 0.5em + 0, 1vw, 0, 5em);
     text-decoration: none;
 }
+
 /* estilização da parte de login */
-.login{
+.login {
+    margin: 15px;
     font-family: 'Fredoka';
     margin-top: 20%;
-    margin-left:   60%;
+    margin-left: 60%;
 }
-  form{
+
+form {
     font-family: 'Fredoka';
-   margin-left: 50%;
-	margin: 0 auto;
-	padding: 40px 0;
+    margin-left: 100%;
+    padding: 40px 0;
 }
-main{
+
+main {
 
     font-family: 'Fredoka';
     margin: 0 auto;
     margin-left: 35%;
-    margin-top: 10%;
-}
-form label{
-	display: block;
-	margin-bottom: 10px;
-	font-size: 18px;
-}
-form legend{
-	display: block;
-	margin: 0px 0px 0px 0px;
-	font-size: 18px;
-}
-fieldset{
-	padding: 10px;
-
-}
-.input-block{
-	display: block;
-	margin-bottom: 20px;
-	font-size: 18px;
-	padding: 4px 7px;
-	width: 50%;
-	
+    margin-top: 3%;
 }
 
-.input-inline{
-	margin-bottom: 0px;
-	margin-right: 10px;
-	font-size: 18px;
-	
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: clamp(0.1em, 0.1em + 0, 01vw, 0, 5em);
 }
-select{
-	margin-bottom: 20px;
-	width: 250px;
-	height: 30px;
-	font-size: 18px;
-	
+
+form legend {
+    display: block;
+    margin: 15px;
+    font-size: clamp(0.1em, 0.1em + 0, 01vw, 0, 5em);
 }
+
+
+
+.input-block {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 18px;
+    padding: 4px 7px;
+    width: 50%;
+
+}
+
+.input-inline {
+    margin-bottom: 0px;
+    margin-right: 10px;
+    font-size: clamp(0.1em, 0.1em + 0, 01vw, 0, 5em);
+
+}
+
+select {
+    margin-bottom: 20px;
+    width: 250px;
+    height: 30px;
+    font-size: clamp(0.2em, 0.2em + 0, 2vw, 1em);
+
+}
+
 /* botao enviar reclamação */
-.enviar{
+.enviar {
+    margin-left: 6%;
+    margin-bottom: 40px;
     color: black;
-	width: 40%;
-	padding: 15px 0;
-	background-color: rgb(255, 255, 255);
-	font-weight: bold;
-	font-size: 18px;
-	border: solid 1px;
-	border-radius: 5px;
-	transition: 1s all;
-	cursor: pointer;
-	font-family: 'Montserrat', sans-serif;
-}
-.enviar:hover{
-    color: #ffffff;
-	background-color: rgb(0, 44, 55);
-	transform: scale(1.2) ;
-}
-table{
-    margin-left: 60%;
-		
+    width: 40%;
+    padding: 15px 0;
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size:  22px;
+    border: solid 1px;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+    font-family: 'Fredoka';
 }
 
-  /* rodapé */
-  footer{
+.enviar:hover {
+    color: #ffffff;
+    background-color: rgb(0, 44, 55);
+    transform: scale(1.2);
+}
+
+table {
+    margin-left: 60%;
+
+}
+
+/* rodapé */
+footer {
+
     width: 100%;
-    background: linear-gradient(rgb(240, 246, 255), rgb(9, 70, 87)97%);
+    background-color: black;
     text-align: center;
 
-  
- }
 
- .copyright {
+}
+
+.copyright {
     width: 100%;
     margin: 0 auto;
     color: rgb(255, 255, 255);
     font-size: 10px;
-   
+
 }
 
 .img-copy {
