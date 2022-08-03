@@ -12,7 +12,7 @@
     <title>Resultados</title>
 </head>
 
-<body onload="javascript:vetor()">
+<body>
     <header>
         <div class="caixa">
             <img class="logoBranca" src="logo/logo branca.png" alt="">
@@ -20,7 +20,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="resultado.html">Resultado</a></li>
                 <li><a href="contatos.html">Contato</a></li>
-                <li><a href="iformacao.html">informações</a></li>
+
             </ul>
         </div>
 
@@ -30,34 +30,35 @@
     <main>
         <section class="busca">
             <p>Nome e sobrenome: <input type="text" id="inBuscar" placeholder="Buscar por nome"></p>
-           <p>Ano de nascimento: <input type="text" id="inData"  placeholder="Insira um ano"></p>
-   
-          
+            <p>Ano de nascimento: <input type="text" id="inData" placeholder="Insira um ano"></p>
+
+
         </section>
-        <table id="tab">
-        <thead>
-            
-            <tr class="titulo-tabela">
-                <th>NOME</th>
-                <th>CPF</th>
-                <th>NASCIMENTO</th>
-                <th>PONTOS</th>
-                <th>RESULTADO</th>
-            </tr>
-        </thead>
-        <tbody id="tabela">
-        </tbody>
+        <table id="tabela">
+            <thead>
+
+                <tr class="titulo-tabela">
+                    <th>NOME</th>
+                    <th>CPF</th>
+                    <th>NASC</th>
+                    <th>PONTOS</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
         </table>
         </div>
     </main>
 
-    <script src="javascript\vetores.js"></script>
-    <script src="javascript\resultado.js"></script>
+  
     <footer>
         <img class="img-copy" src="logo\copyright branco.png">
         <p class="copyright">&copy; FORMA CONCURSOS</p>
 
     </footer>
+    <script src="javascript\vetores.js"></script>
+    <script src="javascript\resultado.js"></script>
 </body>
 
 </html>
