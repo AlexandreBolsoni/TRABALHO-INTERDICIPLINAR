@@ -3,49 +3,48 @@
 /* cabeçalho */
 html {
     font-family: 'Fredoka';
+    background-color: rgb(240, 246, 255);
+
 }
 
 .caixa {
     position: fixed;
-    top: 0%;
-    z-index: auto;
-    background-color: #00181F;
+    top: 0;
+    z-index: 10;
+    background-color: rgb(0, 44, 55);
     height: 85px;
     width: 100%;
-}
-
-.logo-Branca {
+  }
+  
+  .logoBranca {
     margin-left: 32%;
     margin-bottom: 50%;
-    width: 230px;
-}
-
-ul {
-    font-family: 'Fredoka';
+    width: 270px;
+  }
+  
+  ul {
     margin: 0 auto; 
-    padding: 15px;
-        position: absolute;
-        top: 65px;
-        left: 920px;
-}
-
-li {
+    position: absolute;
+    top: 40px;
+    right: 600px;
+  }
+  
+  li {
     margin: 5px;
     margin-bottom: 25%;
     font-size: 15px;
     display: inline;
-
-}
-
-a {
-    font-weight: bold;
-    margin: 15px;
-    font-family: 'Fredoka';
+  
+  }
+  
+  a {
+    width: 50%;
+    margin-bottom: 25%;
     text-transform: uppercase;
     color: #ffffff;
-    font-size: clamp(0.5em, 0.5em + 0, 1vw, 0, 5em);
+    font-weight: bold;
     text-decoration: none;
-}
+  }
 
 
 /* corpo da pagina */

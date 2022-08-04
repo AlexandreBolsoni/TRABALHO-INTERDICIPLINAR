@@ -24,9 +24,9 @@ function gerarTabela() {
             vetNascimento.textContent = nascimento[i];
             vetPonto.textContent = ponto[i];
             if (ponto[i] >= 900) {
-                resultado.textContent = "APROVADO"
+                resultado.textContent = "APROVADO";
             } else {
-                resultado.textContent = "REPROVADO"
+                resultado.textContent = "REPROVADO";
             }
 
             tr.appendChild(vetNome);

@@ -4,8 +4,8 @@
 
 .caixa {
   position: fixed;
-  top: 0%;
-  z-index: auto;
+  top: 0;
+  z-index: 10;
   background-color: rgb(0, 44, 55);
   height: 85px;
   width: 100%;
@@ -19,10 +19,9 @@
 
 ul {
   margin: 0 auto; 
-  padding: 29px;
-      position: absolute;
-      top: 40px;
-      left: 850px;
+  position: absolute;
+  top: 40px;
+  right: 600px;
 }
 
 li {
@@ -71,47 +70,28 @@ main {
 
 /* parte de busaca */
 .busca {
-  margin-left: 25%;
-  padding: 30px;
-  margin-top: 6%;
+  height: 100px;
+  margin-top: 85px;
+  display: flex;
+  justify-content: center;
 }
 
-#inBuscar {
-  text-decoration: none;
-  border-radius: 3px;
-  margin: 20px;
-
+.filtros{
+  display: flex;
+  align-items: center;
 }
 
-#inData {
-  text-decoration: none;
-  border-radius: 3px;
-  margin: 20px;
 
-}
-
-#inData:hover {
-
-  transform: scale(1.05);
-  transition: 1s all;
-  cursor: pointer;
-}
-
-#inBuscar:hover {
-  transform: scale(1.05);
-  transition: 1s all;
-  cursor: pointer;
+.filtros input{
+  width: 200px;
+  margin: 0 20px 0 5px;
+  height: 20px;
+  padding: 2px;
+  font-family: 'Fredoka';
+  font-size: 15px;
 }
 
 /* parte de tabela */
-
-#tab {
-
-  text-align: center;
-  margin: 0 auto;
-  width: 57%;
-  padding: 10px;
-}
 
 thead {
   border-radius: 18px;
@@ -121,30 +101,34 @@ thead {
 }
 
 tr {
-
-  text-align: center;
   width: 50%;
-  margin: 5px;
+}
+
+thead th{
+  background-color: rgb(0, 44, 55);
+  color: white;
+  text-align: left;
+  padding: 10px;
+  width: 90%;
 }
 
 td {
   width: 50%;
   /* margin: 5px; */
   padding: 7px;
-  border: 2px solid #393939bb;
+  border-bottom: 1px solid rgb(0, 44, 55);
 
 }
 
-
-
   tr:nth-child(even){
-    background-color: #d9d7d7;
+    background-color: rgba(0, 44, 55, 0.11);
   }
 
 
 /* rodapé */
 footer {
-
+position: relative;
+top: 50vh;
   margin-top: 30px;
   background-color: #00181F;
   width: 100%;

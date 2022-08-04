@@ -15,7 +15,7 @@
 <body>
     <header>
         <div class="caixa">
-            <img class="logoBranca" src="logo/logo branca.png" alt="">
+            <img class="logoBranca" src="logo\logo-branca.png" alt="">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="resultado.html">Resultado</a></li>
@@ -29,11 +29,12 @@
 
     <main>
         <section class="busca">
-            <p>Nome e sobrenome: <input type="text" id="inBuscar" placeholder="Buscar por nome"></p>
-            <p>Ano de nascimento: <input type="text" id="inData" placeholder="Insira um ano"></p>
-
-
+            <div class="filtros">
+                <label>Nome e sobrenome:<input type="text" id="inBuscar" placeholder="Buscar por nome"></label>
+                <label>Nascidos até o Ano:<input type="number" id="inData" placeholder="Insira um ano"></label>
+            </div>
         </section>
+
         <table id="tabela">
             <thead>
 
@@ -42,7 +43,7 @@
                     <th>CPF</th>
                     <th>NASC</th>
                     <th>PONTOS</th>
-                    <th></th>
+                    <th>SITUAÇÃO</th>
                 </tr>
             </thead>
             <tbody id="tbody">
@@ -53,7 +54,7 @@
 
   
     <footer>
-        <img class="img-copy" src="logo\copyright branco.png">
+        <img class="img-copy" src="logo\copyright-branco.png">
         <p class="copyright">&copy; FORMA CONCURSOS</p>
 
     </footer>

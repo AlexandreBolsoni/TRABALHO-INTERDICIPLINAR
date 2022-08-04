@@ -8,50 +8,44 @@ html {
 
 }
 
-li, #cabecalho {
+.caixa {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: rgb(0, 44, 55);
+    height: 85px;
+    width: 100%;
+  }
+  
+  .logoBranca {
+    margin-left: 32%;
+    margin-bottom: 50%;
+    width: 270px;
+  }
+  
+  ul {
+    margin: 0 auto; 
+    position: absolute;
+    top: 40px;
+    right: 600px;
+  }
+  
+  li {
     margin: 5px;
     margin-bottom: 25%;
-    font-size: 12px;
-    display: inline-block;
-    font-size:15px;
+    font-size: 15px;
+    display: inline;
+  
+  }
+  
+  #cabecalho {
+    width: 50%;
+    margin-bottom: 25%;
     text-transform: uppercase;
     color: #ffffff;
     font-weight: bold;
     text-decoration: none;
-}
-
-
-
-.header {
-    display: inline-block;
-    width: 100%;
-    font-family: 'Fredoka';
-
-}
-
-.caixa {
-
-    position: fixed;
-    top: 0%;
-    z-index: auto;
-    background-color: rgb(0, 44, 55);
-    height: 95px;
-    width: 100%;
-}
-
-ul {
-    font: size 12px;
-    margin: 15px;
-    position: absolute;
-    top: 55px;
-    left: 860px;
-}
-
-.logo-Branca {
-    margin-left: 32%;
-    margin-bottom: 50%;
-    width: 270px;
-}
+  }
 
 .banner {
     margin-bottom: 3%;
@@ -122,7 +116,7 @@ main {
     font-size: 30px;
     text-align: center;
     background-color: rgb(240, 246, 255);
-    width: 940px;
+    width: 940px;   
     height: 100%;
 
 
@@ -138,6 +132,7 @@ main {
 
 /* botões "lista de pontuação" & "por aqui" */
 .pontuacao {
+    margin: 25px;
     display: inline-block;
     text-align: center;
     color: #ffffff;
